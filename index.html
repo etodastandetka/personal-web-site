@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Портфолио Дастана">
+  <title>Дастан - Портфолио</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+html {
+    overflow: -moz-scrollbars-none; 
+    -ms-overflow-style: none; 
+}
+
+html::-webkit-scrollbar {
+    width: 0 !important; 
+}
+
+.scrollable-content {
+    overflow: auto; 
+    scrollbar-width: none; 
+    -ms-overflow-style: none; 
+}
+
+.scrollable-content::-webkit-scrollbar {
+    display: none; 
+}
+    .typing-animation {
+      overflow: hidden;
+      white-space: nowrap;
+      margin: 0 auto;
+      letter-spacing: .15em;
+      animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;
+    }
+
+    @keyframes typing {
+      from { width: 0 }
+      to { width: 100% }
+    }
+
+    @keyframes blink-caret {
+      from, to { border-color: transparent }
+      50% { border-color: orange; }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Навбар -->
+  <nav class="navbar bg-gray-800 sticky top-0 z-10 transition-colors duration-300">
+    <div class="container flex justify-between items-center py-4 px-6">
+      <h1 class="logo text-white text-2xl font-bold">DASTAN</h1>
+      <ul class="nav-links hidden md:flex space-x-6" id="navLinks">
+        <li><a href="#about-me" class="text-white font-semibold hover:text-blue-500">Обо мне</a></li>
+        <li><a href="#skills-interests" class="text-white font-semibold hover:text-blue-500">Навыки</a></li>
+        <li><a href="#contact" class="text-white font-semibold hover:text-blue-500">Контакты</a></li>
+      </ul>
+      <a href="javascript:void(0);" class="icon text-white text-2xl md:hidden" onclick="toggleMenu()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+  </nav>
+
+  <!-- Основной заголовок -->
+  <header class="bg-gray-800 text-white py-16 px-6 text-center">
+    <h1 class="text-4xl font-bold">Дастан</h1>
+  </header>
+
+  <!-- Обо мне -->
+  <section id="about-me" class="py-16 px-6 text-center">
+    <h2 class="text-3xl font-bold mb-6">Обо мне</h2>
+    <p class="text-lg leading-relaxed max-w-3xl mx-auto typing-animation" id="aboutText1">Привет! Меня зовут Дастан, и я фуллстак разработчик с </p>
+    <p class="text-lg leading-relaxed max-w-3xl mx-auto typing-animation" id="aboutText1">большим интересом к созданию увлекательных веб-приложений и игр. </p>
+    <p class="text-lg leading-relaxed max-w-3xl mx-auto typing-animation" id="aboutText1">Мои навыки включают HTML, CSS, JavaScript, Python.</p>
+    <p class="text-lg leading-relaxed max-w-10xl mx-auto typing-animation" id="aboutText1">Я стремлюсь к постоянному обучению и совершенствованию, всегда ищу новые вызовы и возможности для создания значимого вклада в мою работу.</p>
+    <p class="text-lg leading-relaxed max-w-3xl mx-auto typing-animation" id="aboutText1"class="text-lg leading-relaxed max-w-3xl mx-auto typing-animation hidden" id="aboutText4">Помимо профессиональных интересов, я люблю читать книги, играть в видеоигры и играть в волейбол. Давайте свяжемся и создадим что-то удивительное!</p>
+  </section>
+  <!-- Навыки и интересы -->
+  <section id="skills-interests" class="py-16 px-6">
+    <div class="skills-interests-container flex flex-wrap justify-between gap-8">
+      <div class="side-heading bg-white p-6 rounded-lg shadow-md flex-1">
+        <h2 class="text-2xl font-bold mb-6">Навыки</h2>
+        <ul class="space-y-4">
+        
+          <li class="p-4 bg-gray-100 rounded-lg border-l-4 border-blue-500 transition-colors duration-300 hover:bg-gray-200">Python</li>
+          <li class="p-4 bg-gray-100 rounded-lg border-l-4 border-blue-500 transition-colors duration-300 hover:bg-gray-200">HTML</li>
+          <li class="p-4 bg-gray-100 rounded-lg border-l-4 border-blue-500 transition-colors duration-300 hover:bg-gray-200">JavaScript</li>
+          <li class="p-4 bg-gray-100 rounded-lg border-l-4 border-blue-500 transition-colors duration-300 hover:bg-gray-200">CSS</li>
+        </ul>
+      </div>
+
+      <div class="side-heading bg-white p-6 rounded-lg shadow-md flex-1">
+        <h2 class="text-2xl font-bold mb-6">Интересы</h2>
+        <ul class="space-y-4">
+          <li class="p-4 bg-gray-100 rounded-lg border-l-4 border-blue-500 transition-colors duration-300 hover:bg-gray-200">Разработка игр</li>
+          <li class="p-4 bg-gray-100 rounded-lg border-l-4 border-blue-500 transition-colors duration-300 hover:bg-gray-200">Веб-разработка</li>
+          <li class="p-4 bg-gray-100 rounded-lg border-l-4 border-blue-500 transition-colors duration-300 hover:bg-gray-200">Чтение книг</li>
+          <li class="p-4 bg-gray-100 rounded-lg border-l-4 border-blue-500 transition-colors duration-300 hover:bg-gray-200">Игра в видеоигры</li>
+          <li class="p-4 bg-gray-100 rounded-lg border-l-4 border-blue-500 transition-colors duration-300 hover:bg-gray-200">Игра в волейбол</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+ 
+
+  <!-- Контактная информация -->
+  <section id="contact" class="py-16 px-6">
+    <h2 class="text-3xl font-bold text-center mb-12">Контактная информация</h2>
+    <ul class="contact-list flex justify-center space-x-8">
+      <li>
+        <a href="https://etodastandetka.google.com/" class="text-gray-800 font-bold flex items-center gap-2 transition-all duration-300 ease-in-out hover:text-blue-500">
+          <i class="fas fa-envelope text-2xl"></i> Email
+        </a>
+      </li>
+  
+      <li>
+        <a href="https://github.com/etodastandetka" target="_blank" class="text-gray-800 font-bold flex items-center gap-2 transition-all duration-300 ease-in-out hover:text-blue-500">
+          <i class="fab fa-github text-2xl"></i> GitHub
+        </a>
+      </li>
+      <li>
+        <a href="https://t.me/Copycatq" target="_blank" class="text-gray-800 font-bold flex items-center gap-2 transition-all duration-300 ease-in-out hover:text-blue-500">
+          <i class="fab fa-telegram text-2xl"></i> Telegram
+        </a>
+      </li>
+    </ul>
+  </section>
+
+  <footer class="bg-gray-800 text-white text-center py-4">
+    <p>&copy; 2024 Дастан. Все права защищены.</p>
+  </footer>
+
+  <script>
+    const aboutText = document.getElementById('aboutText');
+    const fullText = aboutText.innerText;
+    const partialText = "Привет! Меня зовут Дастан, и я фуллстак разработчик с большим инте";
+
+    aboutText.innerText = partialText;
+
+    setTimeout(() => {
+      aboutText.innerText = fullText;
+      aboutText.classList.add('typing-animation');
+    }, 3500);
+  </script>
+</body>
+
+</html>
